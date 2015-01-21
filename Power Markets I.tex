@@ -1,0 +1,393 @@
+	
+% .:: Laden der LaTeX4EI Formelsammlungsvorlage
+\documentclass[fs, footer]{latex4ei}
+
+% Dokumentbeginn
+% ======================================================================
+\begin{document}
+
+
+% Aufteilung in Spalten
+\begin{multicols*}{4}
+\fstitle{Power Markets I}
+\section{Pan-European POwer Market and its Liberalization} 
+
+\subsection*{Cross Border Trading} 
+
+Total Transfer Capacity (TTC) = Long Term Contracts (LTC) + Availible transfer Capacity (ATC) + Emergency Exchange Margings + Uncertainty
+
+\subsection*{SWEP} Swiss Electricity Price Index
+\begin{itemize}
+	\item at $220 \si{\kilo \volt}$ / $380 \si{\kilo \volt}$ level
+	\item only spot market
+	\item synthetic price for "peak hour" (11-12)
+\end{itemize}
+
+\section{Electricity Spot Market}
+\subsection*{EEX}
+Products:
+\begin{itemize}
+ 	\item Single hours
+ 	\item Base load (24h)
+ 	\item Peak load (8-20 h)
+ \end{itemize} 
+
+ MCP: Market Clearing Price
+
+ The price is determined by matching the supply and demand curve
+
+ \section{Price formation} 
+
+ \textbf{Supply} 
+ The market price is determined by the marginal costs of the power plant (variable production costs)
+ $\Ra$ Merit order 
+
+ \textbf{Demand}
+ The demand of end-customers is almost inelastic 
+
+ \textbf{Influence factors} 
+ \begin{itemize}
+ 	\item Weather (wind, solar, nuclear, hydro, heating)
+ 	\item Outages (planned / unplanned)
+ 	\item Congestion (cross-border)
+ 	\item Different variable costs
+ 	\item Seasonality
+ \end{itemize}
+
+\section{Portfolio Managment (1)} 
+
+\subsection*{Physical position}
+\begin{itemize}
+ 	\item production (planned, optimized )
+ 	\item sales to (end) consumers, fully supply contracts
+ 	\item sales contracts with phy. delivery
+ 	\item purchase contracts with phy. delivery
+ \end{itemize}
+
+ Net physical posistion: long (too much energy) or short (too little energy)
+
+ Balancing with production (PP output), bilateral trading or trading at the exchange
+
+ Deviations are compensated by the supply of balancing power
+\section{Introduction to Energy Economics}
+
+\subsection*{Requirements}
+\begin{itemize}
+ 	\item uninterrupted supply
+ 	\item production follows consumption
+ 	\item different priorities
+ \end{itemize} 
+
+ \subsection*{Dimensions}
+ \begin{itemize}
+  	\item 2-person household: ~3 MWh / a
+  	\item office with 20 workstations: ~20 MWh / a
+  	\item large industry: $>$ 100 GWh / a
+  	\item peak demand (hospital): ~2.5 MW
+  	\item Leibstadt (NPP): 1220 MW
+  \end{itemize} 
+
+ \subsubsection*{CH}
+ \begin{itemize}
+ 	\item  $\approx$ 8 million people
+ 	\item 13 GW peak load
+ 	\item consumption: ~60 TWh/a
+ \end{itemize}
+  \subsubsection*{ENTSO-E}
+ \begin{itemize}
+ 	\item  $\approx$ 450 million people
+ 	\item 500-550 GW peak load
+ 	\item consumption: ~3400 TWh/a
+ \end{itemize}
+
+\subsection*{Voltage levels}
+\begin{itemize}
+ 	\item high voltage (220 kV, 400 kV, HVDC): import/export, long distance, large PP
+ 	\item medium voltage (10 - 110 kV), cabels and overhead lines, cities and cantons
+ 	\item low voltage (230V - 1 kV), distribution, retail customers
+ \end{itemize} 
+
+ \subsection*{Turbines}
+ \begin{itemize}
+  	\item Pelton (head $>$ 500-700 m)
+  	\item Francis (head $>$ 50 m)
+  	\item Kaplan (head $<$ 50 m)
+  \end{itemize} 
+
+  \subsection*{Key players}
+  \begin{itemize}
+  	\item large utilities: Alpiq, Axpo, BKW, CKW, EWZ
+  	\item transmission system operator (TSO): swissgrid
+  	\item regulator: ElCom
+  \end{itemize} 
+\section{Futures Contracts}
+
+\subsection*{Forward}
+Agreeement on the purchase or sale of a good, the "underlying"
+
+\subsection*{Future}
+\begin{itemize}
+  	\item standardized product
+  	\item traded on the futures market of an exchange
+  	\item daily adjustment to price movements ("marking-to market")
+  \end{itemize}  
+
+ \subsection*{Long- and Short position}
+ \begin{itemize}
+ 	\item Long position
+ 	\begin{itemize}
+ 		\item physically: energy producer
+ 		\item contractually: compelled to purchase the good
+ 	\end{itemize}
+ 	\item Short position
+ 	 \begin{itemize}
+ 		\item physically: energy consumer
+ 		\item contractually: compelled to deliver the good
+ 	\end{itemize}
+ \end{itemize}
+
+ \subsection*{EEX Future market}
+
+\subsubsection*{Standardized future contracts}
+
+ \textbf{Underlying}: Phelix Base, Phelix Peak (Mo-Fr, 8-20)
+
+ \textbf{Delivery period}:\\
+ monthly: current month + 6 following \\
+ quarterly: following 7 quarters \\
+ yearly: following 6 years
+
+ \textbf{Unit} $1 \si{\mega \watt}$ 
+
+ \subsection*{Properties} 
+ Contract trading: delivery at a future date, price reflects expectation
+
+ Price drivers: growth of the spot market, economic data
+
+ Volumes: big (yearly quantities)
+
+ Volatility: low
+
+ \subsubsection*{Cascading}
+ Contracts are automatically replaced with the next-shortest term contracts.
+
+ Motivation: avoiding high price fluctuation due to low liquidity
+
+ \subsubsection*{Settlement}
+ monthly contracts are fullfilled financially  
+
+ settelment price is average of Phelix Base or Peak
+
+ \subsubsection*{Motivation}
+
+ \begin{itemize}
+  	\item hedging price risk
+  	\item organized trading
+  	\item liquity
+  	\item anonymity
+  	\item transperency
+  	\item no counterparty risk
+  	\item Disadvantage: fees, IT infrastructure
+  \end{itemize} 
+
+\section{Cross-Border Trading}
+
+Clearing price of the region is at where supply and demand match. Imported power moves the supply curve to the right.
+
+\subsection{Capacity constraints}
+Limited capacities $\ra$ complete leveling not possible
+
+Capacity can be bought on annual, monthly and daily basis.
+\begin{itemize}
+	\item sold in auctions (implicit, explicit)
+	\item seperatly in every direction
+\end{itemize}
+
+\subsubsection{Implicit Auctions}
+\begin{itemize}
+	\item prior and independent of spot market
+	\item offers optionalities
+\end{itemize}
+\subsubsection{Explicit Auctions}  
+\begin{itemize}
+	\item simultaneous clearing of capacity rights and spot trading
+	\item optimal allocation
+	\item reduced potential for 'capacity hoarding'
+\end{itemize}
+
+\subsection{Market coupling}
+In case of capacity constraints (ATC too small) capacity has value and therefore prices do only partially converge. 
+\begin{itemize}
+	\item decoupling of markets
+	\item congestion revenue (must be invested by the TSO in grid extensions)
+\end{itemize}
+
+\subsubsection{Flow-based Market Coupling}
+\begin{itemize}
+ 	\item expected cross-border flows (network simulation)
+ 	\item allocation of cpapcities between regions due to market behaviour
+ 	\item ATC and NTC represent existing/installed capacity but not how they are in different market situations
+ 	\item applies the expected used capacity to the price coupling mechanism
+ \end{itemize} 
+
+\subsection{Availible capacity}
+TTC: Total transfer capacity
+
+TRM: Transfer reliablity margin
+
+NTC: Net transfer capacity
+
+ATC: Availible transfer capacity (NTC - notified priority contracts
+
+\subsection{Daily sequence}
+
+\begin{itemize}
+ 	\item (explicit) capacity auctions
+ 	\item SwissIX bidding
+ 	\item F/DE-AT bidding
+ 	\item nomination of capacity
+ 	\item non-nominated capacity is reused (blocking strictly forbidden)
+ \end{itemize} 
+\section{Ancillary Services}
+
+
+\subsection{Primary control (R1)}
+(Pumped-) hydro, run-of-river (limited)
+
+\begin{itemize}
+	\item $\pm 3000 \si{\mega \watt}$ in the ENTSO-E area ($\pm 71 \si{\mega \watt}$ in CH)
+	\item reacts immediately to changes of the grid frequency
+	\item stabilizes the frequency
+	\item complete delivery after $30 \si{\second}$
+	\item has to be delivered for $15 \si{\minute}$
+	\item spinning reserve
+	\item for $\pm 200 \si{\milli \hertz}$ the maximum primary control is activated
+	\item activated by the turbine controllers
+\end{itemize}
+
+
+
+\subsection{Secondary control (R2)}
+(Pumped-) hydro
+
+in CH: $\pm 400 \si{\mega \watt} $
+\begin{itemize}
+	\item activated after primary control
+	\item release of primary control
+	\item ramped up/down with $0.5 \% P_{\ir max} / \si{\second}$
+	\item complete delivery after $15 \si{\minute} $
+	\item spinning reserve
+	\item activation through control signal by the TSO
+\end{itemize}
+
+\subsection{Tertiary control (R3)} 
+(Pumped-) hydro, nuclear (neg.), consumers
+\begin{itemize}
+	\item activated after secondary control
+	\item release of secondary control
+	\item manually dispatched
+	\item delivery has to start $15/20 \si{\minute}$ after phone call
+	\item non-spinning
+\end{itemize}
+
+\subsection{Reactive Power, voltage control}
+\begin{itemize}
+	\item stablizing grid voltage
+	\item different requirements at each node in the grid
+\end{itemize}
+\subsection{Losses}
+\begin{itemize}
+	\item TSO forecasts losses
+	\item TSO buys energy to cover the losses
+\end{itemize}
+\subsection{Black start}  
+defined black-starting power stations (islanded operation)
+\section{Market for Ancillary Services}
+
+\subsection{Primary Control} Pay-as-bid for availability (EUR / MW/h)
+
+\subsection{Secondary Control}
+
+Pay-as-bid for availability (CHF / MW/h) \\
+Spot-price coupled utilization price (EUR/MWh)
+
+\subsection{Tertiary Control}
+
+Pay-as-bid for availability (CHF / MW/h) (weekly, daily)\\
+Pay-as-bid for utilization price (EUR/MWh)
+
+\subsection{Reactive power} 3.00 CHF/MVarh
+
+\subsection{Black start} Premium
+
+\subsection{Losses} pay-as-bid
+
+\subsection{SDL Services}
+\begin{itemize}
+ 	\item ancillary services vital for system stability
+ 	\item roughly $\pm 1000 \si{\mega \watt}$ regulation in CH
+ 	\item fundamental value of ancillary services is prevention of a system blackout
+ \end{itemize} 
+\section{Balance groups and balance energy}
+\begin{itemize}
+	\item 1 control area: swissgrid
+	\item blance group: aggregation of infeed/outtakes
+	\item balance energy: difference between set and actual
+	\item balance energy is provided by regulating power plants
+	\item schedules are always fulfilled
+	\item costs/income from unscheduled exchanges always disadvantageous
+\end{itemize}
+
+
+\subsection{Price machanism for balance energy}
+
+BG short:
+
+stabilizing: $(P_{\ir{spot}} + 10 \text{Eur/MWh}) \cdot 1.1$
+
+destabilizing: $(P_{\ir{reg}} + 10 \text{Eur/MWh}) \cdot 1.1$
+
+BG long:
+
+stabilizing: $(P_{\ir{spot}} - 5 \text{Eur/MWh}) \cdot 0.9$
+
+destabilizing: $(P_{\ir{reg}} - 5 \text{Eur/MWh}) \cdot 0.9$
+\section{Risk managment (1)}
+
+\subsection{Mark to Market} 
+
+Difference between strategy outcome and the spot market price
+
+\subsection{Price Modelling}
+Prices can be modelled as a a stochastic process:
+
+$\Delta x = a \cdot \Delta t + b \cdot \Delta \tilde z$
+
+\section{Contract valuation with an Hourly Price Forward Curve (HPFC)}
+
+\begin{itemize}
+	\item Historic relation of hourly spot prices is used to transform the standard products base and peak into a synthetic hourly price curve
+	\item Hourly price (forward) curve (HPFC)
+	\item Non-traded synthetic
+	\item Useful for defining the value of a delivery contract
+	\item Full supply contracts are always more valueable than profile supply
+\end{itemize}
+
+\section{Risk management (2)}
+
+\section{Options (1)}
+
+\section{Trading hydro power}
+
+\section{More derivatives: Swap, Cap, Floor, Collar}
+
+\section{Portfolio Management (2)}             
+% Ende der Spalten
+\end{multicols*}
+
+% Dokumentende
+% ======================================================================
+\end{document}
+
+% ToDos:
+
